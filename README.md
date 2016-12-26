@@ -1,2 +1,2 @@
-# dot-loader
+# dotLoader.js
 Jquery loader plugin
