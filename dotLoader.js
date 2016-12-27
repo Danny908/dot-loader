@@ -8,7 +8,7 @@
    |  (___)  ||  (_)  ||   | |           ||  (_)  ||  (_)| ||  (___)  ||   –––/__ |  |    |  |\__   \
     \________| \_____/ |___| |___________| \_____/  \____|_| \________| \________||__|(_) |  | ___\  \
                                                                                       _   /  /|______/
-    Version: 1.0.0                                                                  / /__/  /
+    Version: 1.1.0                                                                  / /__/  /
     Author: Daniel Torres                                                          /______ /  
     Repo: https://github.com/Danny908/dotLoader.js
     Issues: https://github.com/Danny908/dotLoader.js/issues
@@ -25,15 +25,19 @@
             speed: 300,
             style: 'circle',
             animation: 'fade',
+            border: false,
+            borderColor: 'transparent',
+            borderSize: 0,
+            borderStyle: 'solid'
         }, options);
 
-        var _dot = '';
-        var _template;
-        var _style;
+        var _dot = '', _template, _style, _border;
 
         for(var a = 0; a < _settings.dotNum; a++) {
             _dot += `<div class='dot'></div>`; 
         }
+
+        _border = (_settings.border === false ? 'none' : `${_settings.borderSize}px ${_settings.borderStyle} ${_settings.borderColor} `);
 
         _template =
         `
@@ -57,7 +61,8 @@
             'height':                   `${_settings.dotSize}px`,
             'background':               _settings.dotColor,
             'opacity':                  _settings.dotOpacity,
-            'border-radius':            _style
+            'border-radius':            _style,
+            'border':                   _border
         });
 
         setInterval(function(){
