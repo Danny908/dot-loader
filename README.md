@@ -13,6 +13,7 @@ Add .js library before your closing ```<body>```tag:
 ```
 # Usage
 **Basic Usage**
+
 _Default option loader._
 ```html
 <script>
@@ -20,6 +21,7 @@ _Default option loader._
 </script>
 ```
 **Advance Usage**
+
 _Custom option loader._
 ```html
 <script>
@@ -45,7 +47,7 @@ style | string | 'circle' | 'circle', 'square' | Modify shape of loader.
 animation | string | 'fade' | 'none', 'fade', 'jump', 'zoom', 'rotate' | Modify loader animation.
 
 # Events
-Close when data has been loaded.
+Close loader when data has been loaded.
 ```html
 <script>
     $('your-element').trigger('loaded');
