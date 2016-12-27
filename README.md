@@ -2,7 +2,7 @@
 A simple but efficient Jquery Loader.
 
 # Setup
-Add the css file in your ```<head>````
+Add the css file in your ```<head>```
 ```html
 <link rel="stylesheet" href=".../dotLoader.css">
 ```
