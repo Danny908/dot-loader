@@ -14,7 +14,7 @@
     Issues: https://github.com/Danny908/dotLoader.js/issues
 */
 (function( $ ) {
-    $.fn.dot = function(options){
+    $.fn.dot = function( options ){
         var _settings = $.extend({
             dotNum: 5,
             dotColor: 'white',
