@@ -76,7 +76,7 @@
                     selector.animate({width: `${_settings.dotSize}px`,height: `${_settings.dotSize}px`}, 300);
                     break;
                 case 'rotate':
-                    $('.dot').css({'transform': `rotate(${counter * 45}deg`});
+                    $('.dot').css({'transform': `rotate(${counter * (360 / _settings.dotNum)}deg`});
                     break;
             }
             counter = (counter === _settings.dotNum-1 ? 0 : counter+= 1);
