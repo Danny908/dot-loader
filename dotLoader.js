@@ -8,7 +8,7 @@
    |  (___)  ||  (_)  ||   | |           ||  (_)  ||  (_)| ||  (___)  ||   –––/__ |  |    |  |\__   \
     \________| \_____/ |___| |___________| \_____/  \____|_| \________| \________||__|(_) |  | ___\  \
                                                                                       _   /  /|______/
-    Version: 1.1.0                                                                  / /__/  /
+    Version: 1.1.1                                                                  / /__/  /
     Author: Daniel Torres                                                          /______ /  
     Repo: https://github.com/Danny908/dotLoader.js
     Issues: https://github.com/Danny908/dotLoader.js/issues
@@ -18,10 +18,8 @@
         var _settings = $.extend({
             dotNum: 5,
             dotColor: 'white',
-            dotOpacity: 1,
             dotSize: 10,
-            backColor: 'black',
-            backOpacity: 0.6,
+            backColor: 'rgba(0, 0, 0, 0.5)',
             speed: 300,
             style: 'circle',
             animation: 'fade',
@@ -52,15 +50,13 @@
         $(this).append(_template);
 
         $('.loader-container').css({
-            'background': _settings.backColor,
-            'opacity':          _settings.backOpacity
+            'background': _settings.backColor
         });
 
         $('.dot').css({
             'width':                    `${_settings.dotSize}px`,
             'height':                   `${_settings.dotSize}px`,
             'background':               _settings.dotColor,
-            'opacity':                  _settings.dotOpacity,
             'border-radius':            _style,
             'border':                   _border
         });
