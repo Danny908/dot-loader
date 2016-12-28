@@ -50,9 +50,7 @@
         $(this).css('position', 'relative');
         $(this).append(_template);
 
-        $('.loader-container').css({
-            'background': _settings.backColor
-        });
+        $('.loader-container').css('background', _settings.backColor);
 
         $('.dot').css({
             'width':                    `${_settings.dotSize}px`,
@@ -85,7 +83,11 @@
         }, _settings.speed, counter = 0);
 
         $(this).on('loaded', function(){
-            $('.loader-container').remove();
+            $('.loader-container').fadeOut(200);
+            setTimeout(function() {
+                $('.loader-container').remove();
+            },200);
+            
         }); 
     };
 }( jQuery ));
