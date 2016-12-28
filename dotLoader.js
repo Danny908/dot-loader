@@ -47,8 +47,7 @@
         `;
         _style = (_settings.style === 'circle' ? '50%' : '0%');
         _colors = _settings.dotColor.split('|');
-        console.log(_colors[1])
-        
+             
         $(this).css('position', 'relative');
         $(this).append(_template);
 
@@ -66,7 +65,7 @@
         });
         setInterval(function(){
             var selector = $('.loader').children().eq(counter);
-            console.log(flag, counter);
+            
             selector.css('background', _colors[flag]);
             switch(_settings.animation){
                 case 'none':
