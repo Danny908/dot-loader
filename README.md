@@ -46,7 +46,7 @@ style | string | 'circle' | 'circle', 'square' | Modify shape of loader.
 animation | string | 'fade' | 'none', 'fade', 'jump', 'zoom', 'rotate' | Modify loader animation.
 border | boolean | false | true, false | Enable / Disable border property.
 borderColor | string |'transparent' | Any color (solid, hex, rgba, transparent). | Modify border color.
-borderSize | 0 | int | Any positive number. | Modify border width in pixels.
+borderSize | int | 0 | Any positive number. | Modify border width in pixels.
 borderStyle | string | 'solid' | 'none', 'hidden', 'dotted', 'dashed', 'solid', 'double', 'groove', 'ridge', 'inset', 'outset' | Modify border style.
 
 
