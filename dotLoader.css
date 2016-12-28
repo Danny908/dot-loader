@@ -20,5 +20,6 @@
 .dot {
     display: inline-block;
     margin:  0 10px 0 10px;
-    transition: transform 0.5s;
+    transition-property: transform, background;
+    transition-duration: 0.5s, 1s;
 }
