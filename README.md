@@ -37,7 +37,7 @@ _Custom option loader._
 # Settings
 Option | Type | Default | Other values | Description
 ------ | ---- | ------- | ------------ | -----------
-dotNum | int | 5 | Any positive number. | Modify num of dots on loader.
+dotNum | int | 5 | Any positive number. | Modify number of dots on loader.
 dotColor | string | Any color (solid, hex, rgba, gradient, transparent). | 'white' | Modify loader color.
 dotSize | int | 10 | Any positive number. | Modify loader size in pixels.
 backColor | string | Any color (solid, hex, rgba, gradient, transparent). | 'rgba(0, 0, 0, 0.5)' | Modify loader background color.
