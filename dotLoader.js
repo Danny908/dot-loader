@@ -16,16 +16,16 @@
 (function( $ ) {
     $.fn.dot = function( options ){
         var _settings = $.extend({
-            dotNum: 5,
-            dotColor: 'white',
-            dotSize: 10,
-            backColor: 'rgba(0, 0, 0, 0.5)',
-            speed: 300,
-            style: 'circle',
-            animation: 'fade',
-            border: false,
+            dotNum:      5,
+            dotColor:    'white',
+            dotSize:     10,
+            backColor:   'rgba(0, 0, 0, 0.5)',
+            speed:       300,
+            style:       'circle',
+            animation:   'fade',
+            border:      false,
             borderColor: 'transparent',
-            borderSize: 0,
+            borderSize:  0,
             borderStyle: 'solid'
         }, options);
 
