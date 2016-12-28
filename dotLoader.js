@@ -47,6 +47,7 @@
         `;
         _style = (_settings.style === 'circle' ? '50%' : '0%');
         
+        $(this).css('position', 'relative');
         $(this).append(_template);
 
         $('.loader-container').css({
