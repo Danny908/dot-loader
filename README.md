@@ -40,7 +40,7 @@ Option | Type | Default | Other values | Description
 dotNum | int | 5 | Any positive number. | Modify number of dots on loader.
 dotColor | string | Any color (solid, hex, rgba, gradient, transparent). | 'white' | Modify loader color.
 dotSize | int | 10 | Any positive number. | Modify loader size in pixels.
-backColor | string | Any color (solid, hex, rgba, gradient, transparent). | 'rgba(0, 0, 0, 0.5)' | Modify loader background color.
+backColor | string |  'rgba(0, 0, 0, 0.5)' | Any color (solid, hex, rgba, gradient, transparent). | Modify loader background color.
 speed | int | 300 | Any positive number. | Modify animation speed in milliseconds.
 style | string | 'circle' | 'circle', 'square' | Modify shape of loader.
 animation | string | 'fade' | 'none', 'fade', 'jump', 'zoom', 'rotate' | Modify loader animation.
