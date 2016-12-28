@@ -29,7 +29,7 @@ _Custom option loader._
         dotNum: 6,        //Change num of dots on loader.
         dotColor: 'red',  //Change loader color.
         speed: 400,       //Change speed animation.
-        animation: 'zoom' //Change loader aniamtion.
+        animation: 'zoom' //Change loader animation.
     });
 </script>
 ```
