@@ -48,7 +48,9 @@
         _style = (_settings.style === 'circle' ? '50%' : '0%');
         _colors = _settings.dotColor.split('|');
              
-        $(this).css('position', 'relative');
+        if(this[0].nodeName != 'BODY')
+            $(this).css('position', 'relative');
+        
         $(this).append(_template);
 
         $('.loader-container').css({
@@ -74,7 +76,7 @@
                     selector.fadeOut(300).fadeIn(300);
                     break;
                 case 'jump':
-                    selector.animate({marginBottom: `${_settings.dotSize*1.5}px`}, 300).animate({marginBottom: '0px'}, 300);
+                    selector.animate({marginBottom: `-${_settings.dotSize*1.5}px`}, 300).animate({marginBottom: '0px'}, 300);
                     break;
                 case 'zoom':
                     selector.animate({width: `${_settings.dotSize*1.5}px`,height: `${_settings.dotSize*1.5}px`}, 300);
