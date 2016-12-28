@@ -26,10 +26,10 @@ _Custom option loader._
 ```html
 <script>
     $('your-element').dot({
-        dotNum: 6,        //Change num of dots on loader.
+        dotNum: 6,                   //Change num of dots on loader.
         dotColor: 'red|blue|white',  //Toggle loader color.
-        speed: 400,       //Change speed animation.
-        animation: 'zoom' //Change loader animation.
+        speed: 400,                  //Change speed animation.
+        animation: 'zoom'            //Change loader animation.
     });
 </script>
 ```
