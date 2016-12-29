@@ -96,7 +96,7 @@
             if(flag === _colors.length-1) {
                 flag = 0;
             }
-        }, _settings.speed, counter = 0), flag = 0;
+        }, _settings.speed, counter = 0, flag = 0);
 
         $(this).on('loaded', function(){
             $('.loader-container').fadeOut(200);
