@@ -29,13 +29,14 @@
             borderStyle: 'solid'
         }, options);
 
-        var _dot = '', _template, _style, _border, _colors;
+        var _dot = '', _template, _style, _border, _colors, _borderColor;
 
         for(var a = 0; a < _settings.dotNum; a++) {
             _dot += `<div class='dot'></div>`; 
         }
 
-        _border = (_settings.border === false ? 'none' : `${_settings.borderSize}px ${_settings.borderStyle} ${_settings.borderColor} `);
+        _borderColor = _settings.borderColor.split('|');
+        _border = (_settings.border === false ? 'none' : `${_settings.borderSize}px ${_settings.borderStyle} ${_borderColor[0]} `);
 
         _template =
         `
@@ -63,12 +64,16 @@
             'height':                   `${_settings.dotSize}px`,
             'background':               _colors[0],
             'border-radius':            _style,
-            'border':                   _border
+             'border':                  _border
         });
         setInterval(function(){
             var selector = $('.loader').children().eq(counter);
-            
-            selector.css('background', _colors[flag]);
+            _border = (_settings.border === false ? 'none' : `${_settings.borderSize}px ${_settings.borderStyle} ${_borderColor[flag]} `);
+
+            selector.css({
+                'background': _colors[flag],
+                'border':   _border
+                });
             switch(_settings.animation){
                 case 'none':
                     break;

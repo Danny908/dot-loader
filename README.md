@@ -26,10 +26,11 @@ _Custom option loader._
 ```html
 <script>
     $('your-element').dot({
-        dotNum: 6,                   //Change num of dots on loader.
-        dotColor: 'red|blue|white',  //Toggle loader color.
-        speed: 400,                  //Change speed animation.
-        animation: 'zoom'            //Change loader animation.
+        dotNum: 6,                          //Change num of dots on loader.
+        dotColor: 'red|blue|white',         //Toggle loader color.
+        borderColor: 'blue|yellow|orange',  //Toggle border color.
+        speed: 400,                         //Change speed animation.
+        animation: 'zoom'                   //Change loader animation.
     });
 </script>
 ```
@@ -45,7 +46,7 @@ speed | int | 300 | Any positive number. | Modify animation speed in millisecond
 style | string | 'circle' | 'circle', 'square' | Modify shape of loader.
 animation | string | 'fade' | 'none', 'fade', 'jump', 'zoom', 'rotate' | Modify loader animation.
 border | boolean | false | true, false | Enable / Disable border property.
-borderColor | string |'transparent' | Any color (solid, hex, rgba, transparent). | Modify border color.
+borderColor | string |'transparent' | Any color (solid, hex, rgba, transparent). | Modify border color (Multiple color add a pipe between colors).
 borderSize | int | 0 | Any positive number. | Modify border width in pixels.
 borderStyle | string | 'solid' | 'none', 'hidden', 'dotted', 'dashed', 'solid', 'double', 'groove', 'ridge', 'inset', 'outset' | Modify border style.
 
